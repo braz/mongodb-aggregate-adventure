@@ -1,0 +1,13 @@
+Write a program that connects to a locally running MongoDB MongoD server
+and prints the result of a pipeline that processes a stream of documents
+through a number of stages.
+
+Aggregation allows you to combine projecting, grouping, sorting, limiting,
+and skipping.
+
+In this first example, you will operate on an existing collection to find
+where was the most filmed location in San Francisco. This data was provided
+by the San Francisco Data project at https://data.sfgov.org at https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am
+
+In this exercise, you will should the database '{bold}sanfranciscodata{/bold}'
+running on your localhost (127.0.0.1) in port 27017 and READ from the collection '{bold}filmlocations{/bold}'.

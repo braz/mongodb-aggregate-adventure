@@ -21,4 +21,6 @@
 </tbody></table>
 
 ## License
-TBD. See the included LICENSE file for more details.
+**mongodb-aggregate-adventure** is Copyright (c) 2014 Eoin Brazil [@braz](https://twitter.com/eoinbrazil) and licenced under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.
+
+**mongodb-aggregate-adventure** builds on the excellent work by [@rvagg](https://github.com/rvagg) who created **[Workshopper](https://github.com/rvagg/workshopper)** which serves as the original foundation and inspiration for **mongodb-aggregate-adventure**.

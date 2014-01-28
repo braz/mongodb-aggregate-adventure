@@ -1,0 +1,36 @@
+{
+  "name": "mongodb-aggregate-adventure",
+  "version": "0.1.0",
+  "description": "MongoDB Aggregate Adventure! An introduction to the aggregation framework in MongoDB via a set of self-guided workshops.",
+  "author": "Eoin Brazil <eoin.brazil@gmail.com> (https://github.com/braz)",
+  "contributors": [
+    "Eoin Brazil <eoin.brazil@gmail.com> (https://github.com/braz)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/braz/mongodb-aggregate-adventure.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "workshopper": "~0.6.0",
+    "through2": "~0.2.1",
+    "sleep": "~1.1.3"
+  },
+  "bin": {
+    "mongodb-aggregate-adventure": "./mongodb-aggregate-adventure.js"
+  },
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/braz/mongodb-aggregate-adventure/issues"
+  },
+  "homepage": "https://github.com/braz/mongodb-aggregate-adventure",
+  "main": "mongodb-aggregate-adventure.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "workshopper",
+    "mongodb"
+  ]
+}
