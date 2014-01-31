@@ -6,8 +6,29 @@ Aggregation allows you to combine projecting, grouping, sorting, limiting,
 and skipping.
 
 In this first example, you will operate on an existing collection to find
-where was the most filmed location in San Francisco. This data was provided
-by the San Francisco Data project at https://data.sfgov.org at https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am
+who starred (the cast) in this selection of films that were set in San Francisco. This data was provided by the San Francisco Data project at https://data.sfgov.org at https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am
 
-In this exercise, you will should the database '{bold}sanfranciscodata{/bold}'
-running on your localhost (127.0.0.1) in port 27017 and READ from the collection '{bold}filmlocations{/bold}'.
+In this exercise, you will use the database '{bold}test{/bold}'
+running on your localhost (127.0.0.1) in port 27017 and CREATE the collection '{bold}locations{/bold}' from the file 'locations.json' included in the data collection or available at . You can do this programmatically or you can use the commandline tool, mongoimport with the --jsonArray option.
+
+Stage 1 - Create the database 'test' and then create the collection 'locations'.
+
+Stage 2 - Insert the documents from the JSON file, 'locations.json'.
+
+Stage 3 - Perform an aggregate operation on the records using the $project and the $unwind operators to retrieve the list of "cast" members for these films and return the output of this operation to the console.
+
+Your answer to the exercise will be run against the official solution to ensure
+that your query returns the correctly modified document.
+
+This exercise assumes a running MongoDB on your local machine. This means
+the connection string will again be {yellow}{bold}'mongodb://127.0.0.1:27017/'{/yellow}{/bold}. You will create the database and collection you will use for this exercise as part of the exercise.
+
+----------------------------------------------------------------------
+HINTS:
+
+In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output. In this case you will create a pipeline using a projection on the cast field and then apply the unwind operator again on the cast field.
+
+The aggregation MongoDB document reference can be found at:
+{yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
+and the aggregate NodeJS driver method reference can be found at:
+{yellow}http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#aggregate{/yellow}
