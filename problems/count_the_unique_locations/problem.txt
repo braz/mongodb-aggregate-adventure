@@ -1,0 +1,28 @@
+Write a program that connects to a locally running MongoDB MongoD server
+and prints the result of a pipeline that processes a stream of documents
+through a number of stages.
+
+In this second problem, you'll use aggregation to provide a count per distinct locations used in the 'locations' collection. This will use four different operators and highlight how a complex pipeline can be built using the aggregation framework in MongoDB. This data was provided by the San Francisco Data project at https://data.sfgov.org at https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am
+
+In this exercise, you will use the database '{bold}test{/bold}'
+running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}locations{/bold}'.
+
+Stage 1 - Connect to the database 'test' and use the collection 'locations'.
+
+Stage 2 - Perform an aggregate operation on the records using the $project, $unwind, $sum, and $sort operators to retrieve the list of "cast" members for these films and return the output of this operation to the console.
+
+Your answer to the exercise will be run against the official solution to ensure
+that your query returns the correctly modified document.
+
+This exercise assumes a running MongoDB on your local machine. This means
+the connection string will again be {yellow}{bold}'mongodb://127.0.0.1:27017/'{/yellow}{/bold}. You will create the database and collection you will use for this exercise as part of the exercise.
+
+----------------------------------------------------------------------
+HINTS:
+
+In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output. In this case you will create a pipeline using a projection on the filmlocation field and then apply the unwind operator again on the filmlocation field in a similar fashion to the very first exercise. You should add to this pipeline a sum operator creating a new timesUsed result field, "timesUsed": {"$sum":1}}}, and then sort these with the most frequently used locations appearing first (hint use -1 for the sort).
+
+The aggregation MongoDB document reference can be found at:
+{yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
+and the aggregate NodeJS driver method reference can be found at:
+{yellow}http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#aggregate{/yellow}

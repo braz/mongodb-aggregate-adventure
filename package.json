@@ -1,6 +1,6 @@
 {
   "name": "mongodb-aggregate-adventure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MongoDB Aggregate Adventure! An introduction to the aggregation framework in MongoDB via a set of self-guided workshops.",
   "author": "Eoin Brazil <eoin.brazil@gmail.com> (https://github.com/braz)",
   "contributors": [

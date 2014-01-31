@@ -11,7 +11,7 @@ Workshopper({
   , prerequisitesFile : path.join(__dirname, 'prerequisites.txt')
   , creditsFile : path.join(__dirname, 'credits.txt')
   , menu: {
-    bg: 'cyan',
+    bg: 'yellow',
     fg: 'white'
   }
 }).init()
