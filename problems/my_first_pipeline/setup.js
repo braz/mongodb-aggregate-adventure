@@ -3,6 +3,8 @@ module.exports = function () {
 
   var server = 'mongodb://127.0.0.1:27017/test';
   var collectionname = 'locations';
+  var collection_tmp_name = 'locations_tmp';
+
   var MongoClient = require('mongodb').MongoClient 
       , format = require('util').format;
 
@@ -14,9 +16,12 @@ module.exports = function () {
 
           db.dropCollection(collectionname, function(err, result) {
             if (err) return callback(err);
-            db.close(function(err, result) {
+            db.dropCollection(collection_tmp_name, function(err, result) {
               if (err) return callback(err);
-            }); //db.close      
+              db.close(function(err, result) {
+                if (err) return callback(err);
+              }); //db.close      
+            }); //db.dropCollection
           }); //db.dropCollection
       }); // MongoClient.connect
       callback(null);

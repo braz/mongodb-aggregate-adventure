@@ -5,6 +5,8 @@ var async = require('async');
 var fs = require('fs');
 var locationsfile = 'film_locations_in_san_francisco.json';
 var collectionname = 'locations';
+var collection_tmp_name = 'locations_tmp';
+var collection_tmp_count;
 
 // The sleep module and call are used to delay the execution of the solution script to ensure
 // it does not check for the existing of the DB created by your program before it has a chance
@@ -17,17 +19,22 @@ MongoClient.connect(server, function(err, db) {
         console.warn(err.message);
         return;
     }
-    
+
 	async.series([
 	function(callback) {
-	        var collection = db.collection(collectionname);
+	      var collection = db.collection(collectionname);
+	      var tmp_collection = db.collection(collection_tmp_name);
+
+          db.dropCollection(tmp_collection, function(err, result) {
+            if (err) return callback(err);
+          
 			fs.exists(locationsfile, function(exists) {
 		    	if (exists) {
 
 		        	fs.readFile(locationsfile, 'utf8', function (err, data) {
 			            if (err) callback(err);
 			            filmlocationsdoc = JSON.parse(data);
-			            db.collection(collectionname).insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
+			            db.collection(collection_tmp_name).insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
 							
 							if (err) {
 								if ( err.message.indexOf('E11000 ') !== -1 ) {
@@ -37,6 +44,20 @@ MongoClient.connect(server, function(err, db) {
 									return callback(err);
 								}
 							}
+
+							db.collection(collection_tmp_name).count(function(err, count) {
+					            if (err) callback(err);
+					            collection_tmp_count = count;
+					            db.collection(collectionname).count(function(err, count2) {}
+					            	if (err) callback(err);
+
+					            	if (collection_tmp_count != count2)
+					            	{
+					            		var collectionSizeError = new Error("There is a difference in size between collections!");
+					            		callback(collectionSizeError);
+					            	}
+					    	    });
+			            	});
 
     				        collection.aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
 					            if (err) callback(err);
@@ -50,6 +71,7 @@ MongoClient.connect(server, function(err, db) {
 			        }); // fs.readFile
 		        } // if exists
 		      }); // fs.exists
+			}); //db.dropCollection
 			callback(null);
 		}, 
 	  ],
