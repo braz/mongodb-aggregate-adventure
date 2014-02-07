@@ -22,59 +22,54 @@ MongoClient.connect(server, function(err, db) {
 
 	async.series([
 	function(callback) {
-	      var collection = db.collection(collectionname);
-	      var tmp_collection = db.collection(collection_tmp_name);
+      var collection = db.collection(collectionname);
+      var tmp_collection = db.collection(collection_tmp_name);
 
-          	console.log("post drop");
+		fs.exists(locationsfile, function(exists) {
+    	if (exists) {
 
-			fs.exists(locationsfile, function(exists) {
-		    	if (exists) {
+        	fs.readFile(locationsfile, 'utf8', function (err, data) {
+	            if (err) callback(err);
+	            filmlocationsdoc = JSON.parse(data);
+	           	tmp_collection.insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
+					
+					if (err) {
+						if ( err.message.indexOf('E11000 ') !== -1 ) {
+							// this _id was already inserted into the database. There is bad detail in source file so ignore this error.
+						}
+						else {
+							return callback(err);
+						}
+					}
 
-		        	fs.readFile(locationsfile, 'utf8', function (err, data) {
+
+					tmp_collection.count(function(err, count) {
 			            if (err) callback(err);
-			            filmlocationsdoc = JSON.parse(data);
-			           	tmp_collection.insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
-							
-							if (err) {
-								if ( err.message.indexOf('E11000 ') !== -1 ) {
-									// this _id was already inserted into the database. There is bad detail in source file so ignore this error.
-								}
-								else {
-									return callback(err);
-								}
-							}
+			            collection_tmp_count = count;
+			            collection.count(function(err, count2) {
+			            	if (err) callback(err);
 
-          	console.log("tmp inserted");
+			            	if (collection_tmp_count != count2)
+			            	{
+			            		var collectionSizeError = new Error("There is a difference in size between collections!");
+			            		callback(collectionSizeError);
+			            	}
+			    	    });
+	            	});
 
-							tmp_collection.count(function(err, count) {
-					            if (err) callback(err);
-					            collection_tmp_count = count;
-					            collection.count(function(err, count2) {
-					            	if (err) callback(err);
+			        collection.aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
+			            if (err) callback(err);
 
-					            	if (collection_tmp_count != count2)
-					            	{
-					            		var collectionSizeError = new Error("There is a difference in size between collections!");
-					            		callback(collectionSizeError);
-					            	}
-			console.log("counts are good");
-
-					    	    });
-			            	});
-
-    				        collection.aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
-					            if (err) callback(err);
-
-		                        console.log(result);
-				            	db.close(function(err, result) {
-				              		if (err) callback(err);
-					            }); //db.close
-        					});// aggregate
-			            }); // db.insert
-			        }); // fs.readFile
-		        } // if exists
-		      }); // fs.exists
-			callback(null);
+                        console.log(result);
+		            	db.close(function(err, result) {
+		              		if (err) callback(err);
+			            }); //db.close
+					});// aggregate
+	            }); // db.insert
+	        }); // fs.readFile
+        } // if exists
+	    }); // fs.exists
+		callback(null);
 		}, 
 	  ],
 	  // callback and error handling
