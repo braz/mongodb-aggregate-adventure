@@ -48,7 +48,7 @@ MongoClient.connect(server, function(err, db) {
 							db.collection(collection_tmp_name).count(function(err, count) {
 					            if (err) callback(err);
 					            collection_tmp_count = count;
-					            db.collection(collectionname).count(function(err, count2) {}
+					            db.collection(collectionname).count(function(err, count2) {
 					            	if (err) callback(err);
 
 					            	if (collection_tmp_count != count2)
@@ -59,7 +59,7 @@ MongoClient.connect(server, function(err, db) {
 					    	    });
 			            	});
 
-    				        collection.aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
+    				        db.collection(collectionname).aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
 					            if (err) callback(err);
 
 		                        console.log(result);
