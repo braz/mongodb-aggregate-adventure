@@ -25,16 +25,15 @@ MongoClient.connect(server, function(err, db) {
 	      var collection = db.collection(collectionname);
 	      var tmp_collection = db.collection(collection_tmp_name);
 
-          db.dropCollection(tmp_collection, function(err, result) {
-            if (err) return callback(err);
-          
+          	console.log("post drop");
+
 			fs.exists(locationsfile, function(exists) {
 		    	if (exists) {
 
 		        	fs.readFile(locationsfile, 'utf8', function (err, data) {
 			            if (err) callback(err);
 			            filmlocationsdoc = JSON.parse(data);
-			            db.collection(collection_tmp_name).insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
+			           	tmp_collection.insert(filmlocationsdoc, {w:1, fsync:true}, function(err, result) {
 							
 							if (err) {
 								if ( err.message.indexOf('E11000 ') !== -1 ) {
@@ -45,10 +44,12 @@ MongoClient.connect(server, function(err, db) {
 								}
 							}
 
-							db.collection(collection_tmp_name).count(function(err, count) {
+          	console.log("tmp inserted");
+
+							tmp_collection.count(function(err, count) {
 					            if (err) callback(err);
 					            collection_tmp_count = count;
-					            db.collection(collectionname).count(function(err, count2) {
+					            collection.count(function(err, count2) {
 					            	if (err) callback(err);
 
 					            	if (collection_tmp_count != count2)
@@ -56,10 +57,12 @@ MongoClient.connect(server, function(err, db) {
 					            		var collectionSizeError = new Error("There is a difference in size between collections!");
 					            		callback(collectionSizeError);
 					            	}
+			console.log("counts are good");
+
 					    	    });
 			            	});
 
-    				        db.collection(collectionname).aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
+    				        collection.aggregate([{"$project": {"cast":1}},{$unwind: "$cast"}], function(err, result) {
 					            if (err) callback(err);
 
 		                        console.log(result);
@@ -71,7 +74,6 @@ MongoClient.connect(server, function(err, db) {
 			        }); // fs.readFile
 		        } // if exists
 		      }); // fs.exists
-			}); //db.dropCollection
 			callback(null);
 		}, 
 	  ],
