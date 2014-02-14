@@ -22,6 +22,19 @@ MongoClient.connect(server, function(err, db) {
 	function(callback) {
 	    var collection = db.collection(collectionname);
 
+		collection.aggregate([{"$match": { "DATE": { '$gte': new Date(2014,01,03), '$lt' : new Date(2014,01,04)}}}, {$project:{'path':1, 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'd':{'$dayOfMonth':'$DATE'}}}}, {'$group': { '_id': { 'p': '$path', 'y': '$time.y', 'm': '$time.m', 'd': '$time.d' }, 'hits' : {'$sum': 1}}}], function(err, result) {
+            if (err) callback(err);
+
+            console.log(result);
+
+    		collection.aggregate([{"$match": { "DATE": { '$gte': new Date(2014,01,03), '$lt' : new Date(2014,01,04)}}}, {$project:{'path':1, 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'd':{'$dayOfMonth':'$DATE'}}}}, {'$group': { '_id': { 'p': '$path', 'y': '$time.y', 'm': '$time.m', 'd': '$time.d' }, 'hits' : {'$sum': 1}}}], function(err, result) {
+	            if (err) callback(err);
+
+	        	db.close(function(err, result) {
+	          		if (err) callback(err);
+	            }); //db.close
+	        });// aggregate
+		});// aggregate
 	},
   ],
   // callback and error handling

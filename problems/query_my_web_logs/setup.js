@@ -1,5 +1,6 @@
 module.exports = function () {
   var async = require('async');
+  const logsdoc  = require('../../data/logs.json');
 
   var server = 'mongodb://127.0.0.1:27017/test';
   var collectionname = 'logs';
@@ -14,10 +15,15 @@ module.exports = function () {
 
           db.dropCollection(collectionname, function(err, result) {
             if (err) return callback(err);
-            db.close(function(err, result) {
-              if (err) return callback(err);
-            }); //db.close      
-          }); //db.dropCollection
+
+            db.collection(collectionname).insert(logsdoc, {w:1, fsync:true}, function(err, result) {
+              if (err) return callback(err);              
+
+              db.close(function(err, result) {
+                if (err) return callback(err);
+              }); //db.close
+            }); //db.collection.insert
+          }); //db.dropCollection - clear it out before adding in the records to simplify and prevent duplication
       }); // MongoClient.connect
       callback(null);
     } // callback

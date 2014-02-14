@@ -1,20 +1,24 @@
 Write a program that connects to a locally running MongoDB MongoD server and prints the result of a pipeline that processes a stream of documents through a number of stages.
 
-You will load all the records from the 'apache-log-example.json' file which is included in the module's data folder or you can find it on Github (see ).
+You will use the records from the 'logs.json' file which is included in the module's data folder or you can find it on Github (see https://github.com/braz/mongodb-aggregate-adventure/blob/master/data/logs.json). These will be placed into the 'logs' collection on the database 'test' and you will not need to import these in your program.
 
-This file contains 292 documents with the fields 'host', 'date', 'path', 'request' and the optional field 'useragent' formatted as follows:
-{"host": "210.116.59.164", "date": ISODate("2005-03-13T04:05:47Z"), "path": "/_vti_bin/_vti_aut/fp30reg.dll", "request": "POST /_vti_bin/_vti_aut/fp30reg.dll HTTP/1.1" }
-...
-{"host": "219.150.244.58", "date": ISODate("17/Mar/2005:11:38:27Z"), "path": "/", "request": "GET / HTTP/1.1", "useragent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"}
+The documents contain the fields 'host', 'referer', 'page', 'request','useragent', and 'date' formatted as follows:
 
-In this problem you will use the aggregation framework to analysis a log file from a webserver. This will use a complex pipeline to create a report with daily and weekly statistics of who visited the websites hosted on the server and what was the most popular content on this server.
+{ "_id" : ObjectId("52fb7985e774d52c684eeea2"), "HOST" : "209.160.24.63", "REFERER" : "http://www.google.com", "USERAGENT" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/536.5", "PAGE" : "product.screen", "DATE" : ISODate("2014-02-03T18:22:16Z") }
+
+In this problem you will use the aggregation framework to analysis a log file from a webserver. This will use a complex pipeline to create two queries, firstly to count all events on the website on 14th of March 2005 and secondly to drill down on these sub-set of events for a specific host (69.246.7.31) to provide counts for the day and per page / resource.
 
 In this exercise, you will use the database '{bold}test{/bold}'
 running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}logs{/bold}'.
 
-Stage 1 - Connect to the database 'test' and use the collection 'logs'.
+Stage 1 - Connect to the database 'test' and create the collection 'logs'.
 
-Stage 2 - Perform an aggregate operation on the records using the $project, $unwind, $sum, and $sort operators to retrieve the list of "cast" members for these films and return the output of this operation to the console.
+Stage 2 - Create an index on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time.
+
+Stage 3 - Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format.
+{ "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : 372 }
+
+Stage 4 - In a similar query to stage 3, count all the event for the 14th of March 2005 but limit this to the events from the host (69.246.7.3) and return the output to the console. This will return a document in a similiar format to Stage 3 likely with fewer hits as only one host results will be contained.
 
 Your answer to the exercise will be run against the official solution to ensure
 that your query returns the correctly modified document.
@@ -25,9 +29,9 @@ the connection string will again be {yellow}{bold}'mongodb://127.0.0.1:27017/'{/
 ----------------------------------------------------------------------
 HINTS:
 
-In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output. In this case you will create a pipeline using a projection on the XXXX field and then apply the unwind operator again on the XXX field in a similar fashion to the very first exercise. 
+Just a side note about the zero offset in the default Javascript Date() constructor for the month, so your call should use Date(2014,01,03) for February (rather than 2!).
 
-You should add to this pipeline a sum operator creating a new timesUsed result field, "timesUsed": {"$sum":1}}}, and then sort these with the most frequently used locations appearing first (hint use -1 for the sort).
+In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output. In this case you will create a pipeline using a match on the time field and then apply the project operator  on the path and date fields, then you will use the group operator to create a new _id and a new 'hits' field to get the keep the count using the sum operator. You should add to this pipeline a sum operator creating a new hits result field, "hits": {"$sum":1}}}.
 
 The aggregation MongoDB document reference can be found at:
 {yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
