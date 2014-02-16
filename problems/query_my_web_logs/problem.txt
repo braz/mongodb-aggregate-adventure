@@ -1,6 +1,6 @@
 Write a program that connects to a locally running MongoDB MongoD server and prints the result of a pipeline that processes a stream of documents through a number of stages.
 
-You will use the records from the 'logs.json' file which is included in the module's data folder or you can find it on Github (see https://github.com/braz/mongodb-aggregate-adventure/blob/master/data/logs.json). These will be placed into the 'logs' collection on the database 'test' and you will not need to import these in your program.
+You will load all the records from the 'logs.json' file which is included in the module's data folder or you can find it on Github (see https://github.com/braz/mongodb-aggregate-adventure/blob/master/data/logs.json). 
 
 The documents contain the fields 'host', 'referer', 'page', 'request','useragent', and 'date' formatted as follows:
 
@@ -11,9 +11,9 @@ In this problem you will use the aggregation framework to analysis a log file fr
 In this exercise, you will use the database '{bold}test{/bold}'
 running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}logs{/bold}'.
 
-Stage 1 - Connect to the database 'test' and create the collection 'logs'.
+Stage 1 - Connect to the database 'test' and create the collection 'logs' by importing the file 'logs.json' using the Node MongoDB driver code.
 
-Stage 2 - Create an index on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time.
+Stage 2 - Create an index on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time. In 2.2 and 2.4, $match, $sort, $limit and $skip pipeline operators can use an index when they occur at the beginning before any of the following operators $project, $unwind, or $group.
 
 Stage 3 - Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format.
 { "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : 372 }
