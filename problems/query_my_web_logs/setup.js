@@ -5,19 +5,26 @@ module.exports = function () {
   var collectionname = 'logs';
   var MongoClient = require('mongodb').MongoClient 
       , format = require('util').format;
+  var correct_num_of_records = 13628;
 
   async.series([
       // Setup for the exercise by ensuring there is no existing data
       function(callback) {
         MongoClient.connect(server, function(err, db) {
           if (err) return callback(err);
-
-          db.dropCollection(collectionname, function(err, result) {
+          
+          var collection = db.collection(collectionname);
+          collection.find({}).count(function(err, count) {
             if (err) return callback(err);
-              db.close(function(err, result) {
-                if (err) return callback(err);
-              }); //db.close
-          }); //db.dropCollection - clear it out before adding in the records to simplify and prevent duplication
+            if (count != correct_num_of_records)
+            {
+              var collectionSizeError = new Error("There is a difference in size between collections!");
+              callback(collectionSizeError);
+            }
+            db.close(function(err, result) {
+              if (err) return callback(err);
+            }); //db.close
+          }); //collection.find({}).count - get the count number
       }); // MongoClient.connect
       callback(null);
     } // callback
