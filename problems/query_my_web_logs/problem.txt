@@ -1,6 +1,6 @@
 Write a program that connects to a locally running MongoDB MongoD server and prints the result of a pipeline that processes a stream of documents through a number of stages.
 
-You will load all the records from the 'logs_collection' MongoDump which is included in the module's data folder or you can find it on Github (see https://github.com/braz/mongodb-aggregate-adventure/blob/master/data/logs.json). 
+You will load all the records from the 'logs_collection' MongoDump which is included in the module's data folder or you can find it on Github (see https://github.com/braz/mongodb-aggregate-adventure/blob/master/data/logs_collection/). 
 
 The documents contain the fields 'host', 'referer', 'page', 'request','useragent', and 'date' formatted as follows:
 
@@ -13,14 +13,14 @@ running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}lo
 
 Stage 1 - Using the command line perform a MongoRestore of the collection "logs" from the MongoDump found in the module's data folder. The command you will need to use is "mongorestore --drop <PATH_TO_MODULE_DATA_FOLDER>/logs_collection" replacing PATH_TO_MODULE_DATA_FOLDER with the path and directory information for your machine.
 
-Stage 2 - Connect to the database 'test' and create the collection 'logs'.
+Stage 2 - Connect to the database 'test' and use the collection 'logs'.
 
 Stage 3 - Create an index on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time. In 2.2 and 2.4, $match, $sort, $limit and $skip pipeline operators can use an index when they occur at the beginning before any of the following operators $project, $unwind, or $group.
 
-Stage 3 - Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format.
-{ "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : 372 }
+Stage 3 - Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format. Remember that the Javascript Date function use a 0/zero start for its month's constructor (e.g. new Date(2014,01,03))
+{ "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : XXX }
 
-Stage 4 - In a similar query to stage 3, count all the event for the 14th of March 2005 but limit this to the events from the host (69.246.7.3) and return the output to the console. This will return a document in a similiar format to Stage 3 likely with fewer hits as only one host results will be contained.
+Stage 4 - In a similar query to stage 3, count all the event for the 3rd of February 2014 but limit this to the events from the host (195.80.144.22) and return the output to the console. This will return a document in a similiar format to Stage 3 likely with fewer hits as only one host results will be contained.
 
 Your answer to the exercise will be run against the official solution to ensure
 that your query returns the correctly modified document.
