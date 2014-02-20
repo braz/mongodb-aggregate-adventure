@@ -1,0 +1,42 @@
+Write a program that connects to a locally running MongoDB MongoD server and create a pipeline that processes a stream of documents through a number of stages to create a new collection for pre-aggregated reports.
+
+Using the 'logs_collection' loaded in the 'query my web logs' exercise, please complete this before beginning this exercise.
+
+The documents contain the fields 'host', 'referer', 'page', 'request','useragent', and 'date' formatted as follows:
+
+{ "_id" : ObjectId("52fb7985e774d52c684eeea2"), "HOST" : "209.160.24.63", "REFERER" : "http://www.google.com", "USERAGENT" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/536.5", "PAGE" : "product.screen", "DATE" : ISODate("2014-02-03T18:22:16Z") }
+
+In this problem you will use the aggregation framework to analysis a log file from a webserver. You will create two new collections that provide details on the webserver's pages and counts per page at two levels, firstly per hour and then per day.
+
+This will use the aggregation pipeline to create two queries that output to collections respectively, then you will create indexes on these new collections and finally you will query these collections to focus on the time period of the 10th of February 2014, in addition for the hourly collection you will further look at the pages visited between 14:00 and 18:00.
+
+In this exercise, you will use the database '{bold}test{/bold}'
+running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}logs{/bold}'.
+
+Stage 1 - Connect to the database 'test' and use the collection 'logs'.
+
+Stage 2 - Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format. Remember that the Javascript Date function use a 0/zero start for its month's constructor (e.g. new Date(2014,01,03))
+{ "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : XXX }
+
+Stage 3 - In a similar query to stage 3, count all the event for the 3rd of February 2014 but limit this to the events from the host (195.80.144.22) and return the output to the console. This will return a document in a similiar format to Stage 3 likely with fewer hits as only one host results will be contained.
+
+Stage 4 - Create two indexes, one on the collection created from the first aggregation operator '' and one on the collection  on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time. In 2.2 and 2.4, $match, $sort, $limit and $skip pipeline operators can use an index when they occur at the beginning before any of the following operators $project, $unwind, or $group.
+
+
+Your answer to the exercise will be run against the official solution to ensure
+that your query returns the correctly modified document.
+
+This exercise assumes a running MongoDB on your local machine. This means
+the connection string will again be {yellow}{bold}'mongodb://127.0.0.1:27017/'{/yellow}{/bold}. You will create the database and collection you will use for this exercise as part of the exercise.
+
+----------------------------------------------------------------------
+HINTS:
+
+Just a side note about the zero offset in the default Javascript Date() constructor for the month, so your call should use Date(2014,01,03) for February (rather than 2!).
+
+In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output. In this case you will create a pipeline using a project on the page and time fields with a sub-document on the time field, then you will use the group operator to create a new _id and a new 'daily' or 'hourly' field to get the keep the count using the sum operator. You should add to this pipeline a sum operator creating a new 'daily' or 'hourly' result field, for daily similar to '"hourly": {"$sum":1}'. The final stage of the pipeline will use the '$out' operator to create a new collection.
+
+The aggregation MongoDB document reference can be found at:
+{yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
+and the aggregate NodeJS driver method reference can be found at:
+{yellow}http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#aggregate{/yellow}
