@@ -38,10 +38,10 @@ MongoClient.connect(server, function(err, db) {
 			var contains_same_index_fields = 0;
 
 			if (us.difference(valid_index,index_field_required) == contains_same_index_fields) {
-				collection.aggregate([{$project:{'page': '$PAGE', 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'day':{'$dayOfMonth':'$DATE'}}}}, {'$group':{'_id':{'p':'$page','y':'$time.y','m':'$time.m','d':'$time.day'}, 'daily':{'$sum':1}}},{'$out': tmp_created_collection_name}], function(err, result) {
+				collection.aggregate([{$project:{'page': '$PAGE', 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'day':{'$dayOfMonth':'$DATE'}}}}, {'$group':{'_id':{'p':'$page','y':'$time.y','m':'$time.m','d':'$time.day'}, 'daily':{'$sum':1}}},{'$out': tmp_created_collection_per_day_name}], function(err, result) {
 		        	if (err) callback(err);
 
-		        	var tmp_created_collection =  db.collection(tmp_created_collection_name);
+		        	var tmp_created_collection =  db.collection(tmp_created_collection_per_day_name);
 			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10}).toArray(function(err, result) {
 		          		if (err) callback(err);
 
@@ -71,10 +71,10 @@ MongoClient.connect(server, function(err, db) {
 			var contains_same_index_fields = 0;
 
 			if (us.difference(valid_index,index_field_required) == contains_same_index_fields) {
-				collection.aggregate([{$project:{'page': '$PAGE', 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'day':{'$dayOfMonth':'$DATE'}, 'h':{'$hour':'$DATE'}}}}, {'$group':{'_id':{'p':'$page','y':'$time.y','m':'$time.m','d':'$time.day', 'h':'$time.h'}, 'hourly':{'$sum':1}}},{'$out': tmp_created_collection_name}], function(err, result) {
+				collection.aggregate([{$project:{'page': '$PAGE', 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'day':{'$dayOfMonth':'$DATE'}, 'h':{'$hour':'$DATE'}}}}, {'$group':{'_id':{'p':'$page','y':'$time.y','m':'$time.m','d':'$time.day', 'h':'$time.h'}, 'hourly':{'$sum':1}}},{'$out': tmp_created_collection_per_hour_name}], function(err, result) {
 		        	if (err) callback(err);
 
-		        	var tmp_created_collection =  db.collection(tmp_created_collection_name);
+		        	var tmp_created_collection =  db.collection(tmp_created_collection_per_hour_name);
 			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10, "_id.h" : { '$gte':14, '$lte':18 }}).toArray(function(err, result) {
 	   			        	if (err) callback(err);
 
