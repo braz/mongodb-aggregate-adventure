@@ -15,19 +15,19 @@ running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}lo
 
 Stage 1 - Connect to the database 'test' and use the collection 'logs'.
 
-Stage 2 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the daily total number of visits per page per day.
-Count all the events for 3rd of February 2014 per page using the $match, $project, $group operators and return the output of this operation to the console to create a result document in the format. Remember that the Javascript Date function use a 0/zero start for its month's constructor (e.g. new Date(2014,01,03))
-{ "_id" : { "y" : 2014, "m" : 2, "d" : 3 }, "hits" : XXX }
+Stage 2 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}daily total number of visits per page per day{/bold}. You should provide the details per page using the $project, $group, and the $out operators on the {yellow}$PAGE{/yellow} field and splitting the $DATE field into new fields holding values for {yellow}$year, $month, and $dayOfMonth{/yellow}. These should by grouped and then summed ($sum) into a new field 'daily' and outputted to new collection with the name 'page_per_day_hits'. The resulting documents should have the format:
+{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD }, daily: XXX }
 
-db.logs.aggregate([{$project:{'page': '$PAGE', 'time': { 'y': {'$year':'$DATE'} , 'm':{'$month':'$DATE'}, 'day':{'$dayOfMonth':'$DATE'}}}}, {'$group':{'_id':{'p':'$page','y':'$time.y','m':'$time.m','d':'$time.day'}, 'daily':{'$sum':1}}},{'$out': 'page_per_day_hits'}])
+Stage 3 - Create a compound index on your new collection, 'page_per_day_hits' with the fields "_id.p" and "_id.d".
 
-db.page_per_day_hits.ensureIndex({ "_id.p":1, "_id.d":1})
-db.page_per_day_hits.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10 })
+Stage 4 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}hourly total number of visits per page per hour per day{/bold}. You should provide the details per page using the $project, $group, and the $out operators on the $PAGE field and splitting the $DATE field into new fields holding values for $year, $month, $dayOfMonth and $hour. These should by grouped and then summed ($sum) into a new field 'hourly' and outputted to new collection with the name 'page_per_hour_hits'. The resulting documents should have the format:
+{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD, h: HH }, hourly: XXX }
 
-Stage 3 - In a similar query to stage 3, count all the event for the 3rd of February 2014 but limit this to the events from the host (195.80.144.22) and return the output to the console. This will return a document in a similiar format to Stage 3 likely with fewer hits as only one host results will be contained.
+Stage 5 - Create a compound index on your new collection, 'page_per_hour_hits' with the fields "_id.p", "_id.d" and "_id.h".
 
-Stage 4 - Create two indexes, one on the collection created from the first aggregation operator '' and one on the collection  on the fields 'host' and 'date' to improve performance, in this case will a right-aligned index which is efficient for queries with time-oriented data, particularly recent data as only a small piece is resident in RAM at any particular time. In 2.2 and 2.4, $match, $sort, $limit and $skip pipeline operators can use an index when they occur at the beginning before any of the following operators $project, $unwind, or $group.
+Stage 6 - Query the collection 'page_per_day_hits' for the page "cart.do" on 10th of February 2014 and sort the results by day ascending (sort({"_id.d": 1})). Output the result of the query to the console.
 
+Stage 7 - Query the collection 'page_per_hour_hits' for the page "cart.do" on 10th of February 2014 between the hours of 14 and 18 (hint: use a $gte and $lte range) and sort the results by day ascending (sort({"_id.d": 1})). Output the result of the query to the console.
 
 Your answer to the exercise will be run against the official solution to ensure
 that your query returns the correctly modified document.
