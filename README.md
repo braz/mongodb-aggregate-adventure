@@ -2,6 +2,8 @@
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/braz/mongodb-aggregate-adventure/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+![MongoDB Aggregate Adventure !](https://github.com/braz/learnyoumongodb/raw/master/mongodb-aggregate-adventure-screenshot.png)
+
 **An intro to MongoDB Aggregation via a set of self-guided workshops.**
 
   1. Install [Node.js](http://nodejs.org/)
