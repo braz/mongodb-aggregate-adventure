@@ -42,7 +42,7 @@ MongoClient.connect(server, function(err, db) {
 		        	if (err) callback(err);
 
 		        	var tmp_created_collection =  db.collection(tmp_created_collection_per_day_name);
-			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10}).toArray(function(err, result) {
+			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10}).sort({"_id.d": 1}).toArray(function(err, result) {
 		          		if (err) callback(err);
 
 			        	console.log(result);
@@ -75,7 +75,7 @@ MongoClient.connect(server, function(err, db) {
 		        	if (err) callback(err);
 
 		        	var tmp_created_collection =  db.collection(tmp_created_collection_per_hour_name);
-			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10, "_id.h" : { '$gte':14, '$lte':18 }}).toArray(function(err, result) {
+			        tmp_created_collection.find({"_id.p": "cart.do", "_id.y": 2014, "_id.m": 2, "_id.d":10, "_id.h" : { '$gte':14, '$lte':18 }}).sort({"_id.h": 1}).toArray(function(err, result) {
 	   			        	if (err) callback(err);
 
 				        	console.log(result);
