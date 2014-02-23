@@ -23,15 +23,6 @@ Stage 3 - Create a compound index on your new collection, 'user_reports_per_day'
 
 Stage 4 - Query the collection 'user_reports_per_day' for the top 5 visiting users (hint: use the visits field) and sort the results ascending. Output the result of the query to the console.
 
-db.logs.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}}, {'$out': 'user_reports_per_day'}])
-
-db.logs.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}}])
-
-db.user_reports_per_day.find({"_id.ip_address":"49.212.64.138"}).sort({"visits":-1}).
-
-db.user_reports_per_day.ensureIndex({ "_id.ip_address":1, "_id.visited_weekday":1})
-db.user_reports_per_day.find({"_id.ip_address":"49.212.64.138" }).explain()
-
 Your answer to the exercise will be run against the official solution to ensure that your query returns the correctly modified document.
 
 This exercise assumes a running MongoDB on your local machine. This means
@@ -46,4 +37,3 @@ The aggregation MongoDB document reference can be found at:
 {yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
 and the aggregate NodeJS driver method reference can be found at:
 {yellow}http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#aggregate{/yellow}
-
