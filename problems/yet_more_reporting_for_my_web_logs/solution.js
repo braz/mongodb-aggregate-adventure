@@ -37,7 +37,7 @@ MongoClient.connect(server, function(err, db) {
 			var contains_same_index_fields = 0;
 
 			if (us.difference(valid_index,index_field_required) == contains_same_index_fields) {
-				collection.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}},{'$out': tmp_created_collection_per_day_name}], function(err, result) {
+				collection.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}},{'$out': tmp_created_collection_user_reports_per_day_name}], function(err, result) {
 		        	if (err) callback(err);
 
 		        	var tmp_created_collection =  db.collection(tmp_created_collection_user_reports_per_day_name);
