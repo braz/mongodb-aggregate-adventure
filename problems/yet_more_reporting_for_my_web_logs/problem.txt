@@ -1,0 +1,49 @@
+Write a program that connects to a locally running MongoDB MongoD server and create a pipeline that processes a stream of documents through a number of stages to create a new collection for pre-aggregated reports. This builds on the earlier exercises of web log analysis to create even more advanced reports.
+
+This will use the {yellow}'logs_collection'{/yellow} collection loaded in the 'query my web logs' exercise, please complete this before beginning this exercise or import the collection using the instructions in that exercise first before continuing.
+
+The documents in logs_collection' collection contain the fields 'host', 'referer', 'page', 'request','useragent', and 'date' formatted as follows:
+
+{ "_id" : ObjectId("52fb7985e774d52c684eeea2"), "HOST" : "209.160.24.63", "REFERER" : "http://www.google.com", "USERAGENT" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/536.5", "PAGE" : "product.screen", "DATE" : ISODate("2014-02-03T18:22:16Z") }
+
+In this problem you will use the aggregation framework to analysis a log file from a webserver. You will create a new collection that provides details on what pages a specific user (in this case, identified by a specific IP) for a specific day as well a count of the number of visits by the user. An example document for this collection should be in the following format:
+
+{yellow}{ "_id" : { "visited_weekday" : 1, "ip_address" : "49.212.64.138" }, "visits" : 6, "pages_visited" : [  "cart/error.do",  "cart.do",  "product.screen",  "category.screen" ] }{/yellow}
+
+This will use the aggregation pipeline to create the query that outputs to a new collection, then you will create a index on this new collection and finally you will query this collection to return the top five visiting users.
+
+In this exercise, you will use the database '{bold}test{/bold}' running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}logs{/bold}'.
+
+Stage 1 - Connect to the database 'test' and use the collection 'logs'.
+
+Stage 2 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}pages visited, the number of visits, the day of the week and the IP address of the user{/bold}. You should provide the details per user using the $project, $group, and the $out operators on the {yellow}$PAGE, $HOST and $dayOfWeek from $DATE{/yellow} fields and $group on the {yellow}$dayOfWeek and $HOST{/yellow} fields as well as calculating the number of visits (hint: use $sum operator) as well as keep an array of the pages_visited (hint: use $addToSet operator) and sort these results by the $dayOfWeek field before outputting them to a new collection (hint: use the $out operator) {yellow}'user_reports_per_day'{/yellow}. The resulting documents should have the format:
+{yellow}{ "_id" : { "visited_weekday" : Y, "ip_address" : "XXX.XXX.XXX.XXX" }, "visits" : XXX, "pages_visited" : [  "PAGENAME1",  "PAGENAME3",  "PAGENAME3",  "PAGENAME4" ] }{/yellow}
+
+Stage 3 - Create a compound index on your new collection, 'user_reports_per_day' with the fields "_id.ip_address" and "_id.visited_weekday".
+
+Stage 4 - Query the collection 'user_reports_per_day' for the top 5 visiting users (hint: use the visits field) and sort the results ascending. Output the result of the query to the console.
+
+db.logs.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}}, {'$out': 'user_reports_per_day'}])
+
+db.logs.aggregate([{$project: { _id:0, PAGE:1, HOST:1, visited_day: { '$dayOfWeek' : '$DATE' }}},{ $group: {_id: {visited_weekday: "$visited_day", ip_address: "$HOST"}, visits: {$sum:1}, pages_visited: {$addToSet: "$PAGE"}}},{$sort: {"_id.visited_weekday": 1}}])
+
+db.user_reports_per_day.find({"_id.ip_address":"49.212.64.138"}).sort({"visits":-1}).
+
+db.user_reports_per_day.ensureIndex({ "_id.ip_address":1, "_id.visited_weekday":1})
+db.user_reports_per_day.find({"_id.ip_address":"49.212.64.138" }).explain()
+
+Your answer to the exercise will be run against the official solution to ensure that your query returns the correctly modified document.
+
+This exercise assumes a running MongoDB on your local machine. This means
+the connection string will again be {yellow}{bold}'mongodb://127.0.0.1:27017/'{/yellow}{/bold}. You will create the database and collection you will use for this exercise as part of the exercise.
+
+----------------------------------------------------------------------
+HINTS:
+
+In this exercise, you will need to use the `aggregation` framework and its operators to return the desired output.
+
+The aggregation MongoDB document reference can be found at:
+{yellow}http://docs.mongodb.org/manual/reference/command/aggregate{/yellow}
+and the aggregate NodeJS driver method reference can be found at:
+{yellow}http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#aggregate{/yellow}
+
