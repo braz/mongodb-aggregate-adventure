@@ -45,10 +45,13 @@ MongoClient.connect(server, function(err, db) {
 		          		if (err) callback(err);
 
 			        	console.log(result);
-			        	
+
 			        	db.dropCollection(tmp_created_collection_user_reports_per_day_name, function(err, result) {
 			            if (err) return callback(err);
-			       		});
+			            	db.close(function(err, result) {
+    							if (err) console.warn(err.message);
+    							}); //db.close
+			       		}); // db.dropCollection
 			        }); // tmp_created_collection.find({})
 		            callback(null);
            		});// aggregate
@@ -63,9 +66,5 @@ MongoClient.connect(server, function(err, db) {
   // callback and error handling
   function(err, results) {
     if (err) console.warn(err.message);
-
-	db.close(function(err, result) {
-    	if (err) console.warn(err.message);
-    }); //db.close
   });
 }); // connect
