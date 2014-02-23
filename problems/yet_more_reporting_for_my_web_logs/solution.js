@@ -41,11 +41,15 @@ MongoClient.connect(server, function(err, db) {
 		        	if (err) callback(err);
 
 		        	var tmp_created_collection =  db.collection(tmp_created_collection_user_reports_per_day_name);
-			        tmp_created_collection.find().sort({"visits": -1}).limit(5).toArray(function(err, result) {
+			        tmp_created_collection.find({}).sort({"visits": -1}).limit(5).toArray(function(err, result) {
 		          		if (err) callback(err);
 
 			        	console.log(result);
-			        });
+			        	
+			        	db.dropCollection(tmp_created_collection_user_reports_per_day_name, function(err, result) {
+			            if (err) return callback(err);
+			       		});
+			        }); // tmp_created_collection.find({})
 		            callback(null);
            		});// aggregate
 			} // if (valid_index.length == index_field_required.length)
@@ -54,13 +58,6 @@ MongoClient.connect(server, function(err, db) {
 				callback(correctIndexNotPresentError);
 			}
 		}); // collection.indexInformation(function(err, indexitems)
-	},
-	function(callback) {
-        db.dropCollection(tmp_created_collection_user_reports_per_day_name, function(err, result) {
-            if (err) return callback(err);
-        });
-    	
-    	callback(null);
 	},
   ],
   // callback and error handling
