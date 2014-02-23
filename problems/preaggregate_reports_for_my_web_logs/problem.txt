@@ -16,12 +16,12 @@ running on your localhost (127.0.0.1) in port 27017 and the collection '{bold}lo
 Stage 1 - Connect to the database 'test' and use the collection 'logs'.
 
 Stage 2 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}daily total number of visits per page per day{/bold}. You should provide the details per page using the $project, $group, and the $out operators on the {yellow}$PAGE{/yellow} field and splitting the $DATE field into new fields holding values for {yellow}$year, $month, and $dayOfMonth{/yellow}. These should by grouped and then summed ($sum) into a new field 'daily' and outputted to new collection with the name 'page_per_day_hits'. The resulting documents should have the format:
-{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD }, daily: XXX }
+{yellow}{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD }, daily: XXX }{/yellow}
 
 Stage 3 - Create a compound index on your new collection, 'page_per_day_hits' with the fields "_id.p" and "_id.d".
 
-Stage 4 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}hourly total number of visits per page per hour per day{/bold}. You should provide the details per page using the $project, $group, and the $out operators on the $PAGE field and splitting the $DATE field into new fields holding values for $year, $month, $dayOfMonth and $hour. These should by grouped and then summed ($sum) into a new field 'hourly' and outputted to new collection with the name 'page_per_hour_hits'. The resulting documents should have the format:
-{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD, h: HH }, hourly: XXX }
+Stage 4 - Using the aggregate command on the 'logs' collection with a pipeline to create a new collection that holds the {bold}hourly total number of visits per page per hour per day{/bold}. You should provide the details per page using the $project, $group, and the $out operators on the $PAGE field and splitting the $DATE field into new fields holding values for {yellow}$year, $month, $dayOfMonth and $hour{/yellow}. These should by grouped and then summed ($sum) into a new field 'hourly' and outputted to new collection with the name 'page_per_hour_hits'. The resulting documents should have the format:
+{yellow}{ _id: { p: 'PAGENAME', y: 2014, m: 2, d: DD, h: HH }, hourly: XXX }{/yellow}
 
 Stage 5 - Create a compound index on your new collection, 'page_per_hour_hits' with the fields "_id.p", "_id.d" and "_id.h".
 
