@@ -63,6 +63,7 @@ MongoClient.connect(server, function(err, db) {
                         console.log(result);
 		            	db.close(function(err, result) {
 		              		if (err) callback(err);
+	           		    	callback(null);
 			            }); //db.close
 					});// aggregate
 	            }); // db.insert

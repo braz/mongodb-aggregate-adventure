@@ -20,6 +20,7 @@ module.exports = function () {
               if (err) return callback(err);
               db.close(function(err, result) {
                 if (err) return callback(err);
+                callback(null);
               }); //db.close      
             }); //db.dropCollection
           }); //db.dropCollection
